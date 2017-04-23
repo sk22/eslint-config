@@ -4,9 +4,22 @@
 [![David](https://img.shields.io/david/sk22/eslint-config.svg)](https://github.com/sk22/eslint-config)
 [![GitHub stars](https://img.shields.io/github/stars/sk22/eslint-config.svg?style=social&label=Star)](https://github.com/sk22/eslint-config)
 
-based on [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+based on [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+
+## Installation
+
+Add [`eslint-config-sk22`](https://npmjs.com/package/eslint-config-sk22)
+and its peer dependency [`eslint`](https://npmjs.com/package/eslint) as dev
+dependencies to your project.
+
+```
+yarn add --dev eslint-config-sk22 eslint
+```
 
 ## Changes
+
+### using babel as parser
+[`parser: 'babel-eslint'`](https://www.npmjs.com/package/babel-eslint)
 
 ### no semicolons
 [`semi: ['error', 'never']`](http://eslint.org/docs/rules/semi#never)
@@ -31,7 +44,7 @@ const object = {
 }
 ```
 
-### arrow function parens as needed
+### arrow function parens only as needed
 [`arrow-parens: ['error', 'as-needed']`](http://eslint.org/docs/rules/arrow-parens#as-needed)
 (instead of [`requireForBlockBody`](https://github.com/airbnb/javascript#8.2))
 
@@ -39,7 +52,7 @@ const object = {
 const add = (a, b) => a + b // parens needed
 const identity = _ => _ // no parens allowed
 const prepare = str => { // no parens allowed
-  const optimized = optimize(str)
-  return prepare
+  const beautified = beautify(str)
+  return beautified.trim()
 }
 ```
