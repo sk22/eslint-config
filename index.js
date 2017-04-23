@@ -1,8 +1,9 @@
 module.exports = {
-  parser: 'babel-eslint',
   extends: ['airbnb'],
+  parser: 'babel-eslint',
   rules: {
+    semi: ['error', 'never'],
     'comma-dangle': ['error', 'never'],
-    semi: ['error', 'never']
+    'arrow-parens': ['error', 'as-needed']
   }
 }

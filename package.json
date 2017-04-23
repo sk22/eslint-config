@@ -2,9 +2,12 @@
   "name": "eslint-config-sk22",
   "version": "1.0.0",
   "description": "Shareable ESLint Config by sk22",
-  "repository": "sk22/eslint-config-sk22",
+  "repository": "sk22/eslint-config",
   "author": "Samuel Kaiser",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "babel-eslint": "^7.2.3",
     "eslint-config-airbnb": "^14.1.0",
@@ -16,9 +19,10 @@
     "eslint": ">= 3.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "^3.19.0",
+    "eslint-config-sk22": "*"
   },
   "eslintConfig": {
-    "extends": "./index.js"
+    "extends": "sk22"
   }
 }
