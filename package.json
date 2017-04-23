@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-sk22",
-  "version": "1.0.0",
-  "description": "Shareable ESLint Config by sk22",
+  "version": "1.0.1",
+  "description": "sk22's shareable ESLint config",
   "repository": "sk22/eslint-config",
   "author": "Samuel Kaiser",
   "license": "MIT",
@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0",
-    "eslint-config-sk22": "*"
+    "eslint-config-sk22": "latest"
   },
   "eslintConfig": {
     "extends": "sk22"
