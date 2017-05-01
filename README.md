@@ -16,8 +16,8 @@ dependencies to your project.
 yarn add --dev eslint-config-sk22 eslint
 ```
 
-## Changes
-in opposite to 
+## Differences
+in opposite to [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 ### using babel as parser
 [`parser: 'babel-eslint'`](https://www.npmjs.com/package/babel-eslint)
