@@ -56,3 +56,17 @@ const prepare = str => { // no parens allowed
   return beautified.trim()
 }
 ```
+
+### `js` filename extension for jsx
+[`react/jsx-filename-extension: ['warning', { extensions: ['.js'] }]`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
+(instead of [`{ extensions: ['.jsx'] }`](https://github.com/airbnb/javascript/tree/master/react#naming)) // todo
+
+### kebab-case for file naming
+[`filenames/match-exported: ['error', 'kebab']`](https://github.com/selaux/eslint-plugin-filenames)
+(instead of [PascalCase for React components](https://github.com/airbnb/javascript/tree/master/react#naming))
+
+```javascript
+const ListItem = props => (<li {...props} />)
+export default ListItem
+// -> filename must be list-item.js
+```
