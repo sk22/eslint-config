@@ -17,13 +17,14 @@ yarn add --dev eslint-config-sk22 eslint
 ```
 
 ## Changes
+in opposite to 
 
 ### using babel as parser
 [`parser: 'babel-eslint'`](https://www.npmjs.com/package/babel-eslint)
 
 ### no semicolons
 [`semi: ['error', 'never']`](http://eslint.org/docs/rules/semi#never)
-(instead of [`always`](https://github.com/airbnb/javascript#20.1))
+(instead of [`always`](https://github.com/airbnb/javascript#semicolons--required))
 
 ```javascript
 const increment = n => n + 1
@@ -34,7 +35,7 @@ const object = {
 
 ### no comma dangle
 [`comma-dangle: ['error', 'never']`](http://eslint.org/docs/rules/comma-dangle#never)
-(instead of [`always-multiline`](https://github.com/airbnb/javascript#19.2))
+(instead of [`always-multiline`](https://github.com/airbnb/javascript#commas--dangling))
 
 
 ```javascript
@@ -46,7 +47,7 @@ const object = {
 
 ### arrow function parens only as needed
 [`arrow-parens: ['error', 'as-needed']`](http://eslint.org/docs/rules/arrow-parens#as-needed)
-(instead of [`requireForBlockBody`](https://github.com/airbnb/javascript#8.2))
+(instead of [`requireForBlockBody`](https://github.com/airbnb/javascript#arrows--implicit-return))
 
 ```javascript
 const add = (a, b) => a + b // parens needed
@@ -58,8 +59,15 @@ const prepare = str => { // no parens allowed
 ```
 
 ### `js` filename extension for jsx
-[`react/jsx-filename-extension: ['warning', { extensions: ['.js'] }]`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
-(instead of [`{ extensions: ['.jsx'] }`](https://github.com/airbnb/javascript/tree/master/react#naming)) // todo
+[`react/jsx-filename-extension: ['error', { extensions: ['.js'] }]`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
+(instead of [`.jsx`](https://github.com/airbnb/javascript/tree/master/react#naming))
+
+```javascript
+const ListItem = props => (<li {...props} />)
+export default ListItem
+// -> filename must end with .js
+```
+
 
 ### kebab-case for file naming
 [`filenames/match-exported: ['error', 'kebab']`](https://github.com/selaux/eslint-plugin-filenames)
