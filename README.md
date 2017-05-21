@@ -9,12 +9,17 @@ based on [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airb
 ## Installation
 
 Add [`eslint-config-sk22`](https://npmjs.com/package/eslint-config-sk22)
-and its peer dependency [`eslint`](https://npmjs.com/package/eslint) as dev
-dependencies to your project.
+with all peer dependencies to your project. (Just like in
+[eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)).
+
+This can be done using [`install-peerdeps`](https://www.npmjs.com/package/install-peerdeps)
 
 ```
-yarn add --dev eslint-config-sk22 eslint
+install-peerdeps --dev eslint-config-sk22
 ```
+
+Add the `--yarn` flag to your `install-peerdeps` command if you prefer to use
+yarn instead of npm.
 
 ## Differences
 in opposite to [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
