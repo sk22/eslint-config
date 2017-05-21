@@ -58,6 +58,14 @@ const prepare = str => { // no parens allowed
 }
 ```
 
+### allow console
+[`no-console: 'off'`](http://eslint.org/docs/rules/no-console)
+(instead of [`no-console: 'warn'`](https://github.com/airbnb/javascript/blob/772bbb5b7d2f6990e519c3d70539f807257492fe/packages/eslint-config-airbnb-base/rules/errors.js#L25))
+
+```javascript
+console.log('ServiceWorker successfully registered')
+```
+
 ### `js` filename extension for jsx
 [`react/jsx-filename-extension: ['error', { extensions: ['.js'] }]`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
 (instead of [`.jsx`](https://github.com/airbnb/javascript/tree/master/react#naming))
