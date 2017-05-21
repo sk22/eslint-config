@@ -1,7 +1,7 @@
 # eslint-config-sk22
 
 [![npm](https://img.shields.io/npm/v/eslint-config-sk22.svg?label=npm)](https://npmjs.com/package/eslint-config-sk22)
-[![David](https://img.shields.io/david/sk22/eslint-config.svg)](https://github.com/sk22/eslint-config)
+[![David](https://img.shields.io/david/peer/sk22/eslint-config.svg)](https://github.com/sk22/eslint-config)
 [![GitHub stars](https://img.shields.io/github/stars/sk22/eslint-config.svg?style=social&label=Star)](https://github.com/sk22/eslint-config)
 
 based on [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
