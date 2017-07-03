@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sk22",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "sk22's shareable ESLint config",
   "repository": "sk22/eslint-config",
   "author": "Samuel Kaiser",
