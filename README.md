@@ -83,11 +83,11 @@ export default ListItem
 
 
 ### kebab-case for file naming
-[`filenames/match-exported: ['error', 'kebab']`](https://github.com/selaux/eslint-plugin-filenames)
+[`filenames/match-regex: ['error', '^([a-z0-9]+)(-[a-z0-9]+)*$']`](https://github.com/selaux/eslint-plugin-filenames)
 (instead of [PascalCase for React components](https://github.com/airbnb/javascript/tree/master/react#naming))
 
 ```javascript
 const ListItem = props => (<li {...props} />)
 export default ListItem
-// -> filename must be list-item.js
+// -> filename could be list-item.js
 ```
