@@ -8,6 +8,6 @@ module.exports = {
     'arrow-parens': ['error', 'as-needed'],
     'no-console': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
-    'filenames/match-regex': ['error', '^([a-z0-9]+)(-[a-z0-9]+)*$']
+    'filenames/match-regex': ['error', '^(([a-z0-9]+)(-[a-z0-9]+)*\\.?)+$']
   }
 }
